@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Delivery Business Analysis — Sant Kumar Sahu</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">vyom<span>_</span>analytics</a>
+    <div class="nav-links">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding:56px 0 40px;">
+  <div class="wrap">
+    <a href="../index.html#projects" class="back-link">← All projects</a>
+    <div class="eyebrow">Pipeline 01 / Food delivery</div>
+    <h1 style="font-size:38px;">Food delivery business analysis</h1>
+    <p>A full Python → SQL → Power BI pipeline built to find where a food delivery operation was quietly losing money.</p>
+    <div class="detail-meta">
+      <a href="https://vyomvy.github.io/food-delivery-business-analysis/" class="meta-link" target="_blank" rel="noopener">Live dashboard ↗</a>
+      <a href="https://github.com/vyomvy/food-delivery-business-analysis" class="meta-link" target="_blank" rel="noopener">Source code ↗</a>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="block-title">The problem</div>
+    <p class="prose">A food delivery business had 1,500+ orders across 10 areas and no clear read on where refunds were actually coming from. Revenue looked fine at a glance — the question was whether it was fine everywhere, or whether some segments were quietly bleeding money.</p>
+
+    <div class="block-title" style="margin-top:36px;">The pipeline</div>
+    <div class="pipeline">
+      <div class="pipe-step">
+        <div class="pipe-num">01 / PYTHON</div>
+        <h5>Clean the raw data</h5>
+        <p>Standardized order records, handled missing values, and prepped the dataset for querying.</p>
+      </div>
+      <div class="pipe-step">
+        <div class="pipe-num">02 / SQL</div>
+        <h5>Run the analysis</h5>
+        <p>Used CTEs and window functions in MySQL to segment orders by distance band and order type.</p>
+      </div>
+      <div class="pipe-step">
+        <div class="pipe-num">03 / POWER BI</div>
+        <h5>Build the dashboard</h5>
+        <p>Turned the query output into an interactive dashboard for ongoing monitoring.</p>
+      </div>
+    </div>
+
+    <div class="block-title" style="margin-top:36px;">Key findings</div>
+    <div class="findings">
+      <div class="finding-card">
+        <div class="num">17%</div>
+        <p>Refund rate for orders placed beyond 9km — even though that distance band had the highest order value.</p>
+      </div>
+      <div class="finding-card">
+        <div class="num">#1</div>
+        <p>First-time orders were the single highest-refund segment, pointing to a likely discount-abuse pattern.</p>
+      </div>
+      <div class="finding-card">
+        <div class="num">10</div>
+        <p>Delivery areas segmented and compared to isolate where the refund pattern was concentrated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a href="../index.html#projects" class="back-link" style="margin:0;">← Back to all projects</a>
+    <div class="footer-links">
+      <a href="mailto:sahuvyom7@gmail.com">Email</a>
+      <a href="https://github.com/vyomvy" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/sant-sahu-738063319/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
